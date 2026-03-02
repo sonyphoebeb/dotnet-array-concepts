@@ -21,7 +21,7 @@
 
             Console.WriteLine();
             Console.WriteLine("Array Length: " +numbers.Length);
-
+             
             Console.WriteLine();
             Console.WriteLine("Using foreach loop with string array:");
 
@@ -33,6 +33,23 @@
 
             Console.WriteLine();
             Console.WriteLine("String Array Length: " + technologies.Length);
+
+            Console.Write("Enter array size: ");
+            int size = Convert.ToInt32(Console.ReadLine());
+
+            int[] number = new int[size];
+
+            for (int i = 0; i < size; i++)
+            {
+                Console.Write($"Enter number {i + 1}: ");
+                number[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine("You entered:");
+            foreach (int num in number)
+            {
+                Console.WriteLine(num);
+            }
         }
     }
 }
