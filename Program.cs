@@ -74,6 +74,20 @@
             double average = (double)sumArray / arrayAverage.Length;
 
             Console.WriteLine("Average: " + average);
+
+            int[] arrayMax = { 10, 25, 5, 40, 15 };
+
+            int max = arrayMax[0];
+
+            foreach (int num in arrayMax)
+            {
+                if (num > max)
+                {
+                    max = num;
+                }
+            }
+
+            Console.WriteLine("Maximum Number: " + max);
         }
     }
     
