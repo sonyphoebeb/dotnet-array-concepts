@@ -102,6 +102,27 @@
             }
 
             Console.WriteLine("Minimum Number: " + min);
+
+            int[] arraySearch = { 10, 20, 30, 40, 50 };
+
+            Console.Write("Enter number to search: ");
+            int search = Convert.ToInt32(Console.ReadLine());
+
+            bool found = false;
+
+            foreach (int num in arraySearch)
+            {
+                if (num == search)
+                {
+                    found = true;
+                    break;
+                }
+            }
+
+            if (found)
+                Console.WriteLine("Element Found");
+            else
+                Console.WriteLine("Element Not Found");
         }
     }
     
