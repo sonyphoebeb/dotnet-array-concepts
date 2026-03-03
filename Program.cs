@@ -88,6 +88,20 @@
             }
 
             Console.WriteLine("Maximum Number: " + max);
+
+            int[] arrayMin = { 10, 25, 5, 40, 15 };
+
+            int min = arrayMin[0];
+
+            foreach (int num in arrayMin)
+            {
+                if (num < min)
+                {
+                    min = num;
+                }
+            }
+
+            Console.WriteLine("Minimum Number: " + min);
         }
     }
     
