@@ -33,23 +33,48 @@
 
             Console.WriteLine();
             Console.WriteLine("String Array Length: " + technologies.Length);
+            Console.WriteLine();
 
             Console.Write("Enter array size: ");
             int size = Convert.ToInt32(Console.ReadLine());
 
-            int[] number = new int[size];
+            int[] numberArray = new int[size];
 
             for (int i = 0; i < size; i++)
             {
                 Console.Write($"Enter number {i + 1}: ");
-                number[i] = Convert.ToInt32(Console.ReadLine());
+                numberArray[i] = Convert.ToInt32(Console.ReadLine());
             }
 
             Console.WriteLine("You entered:");
-            foreach (int num in number)
+            foreach (int num in numberArray)
             {
                 Console.WriteLine(num);
             }
+
+            Console.WriteLine();
+            int[] arraySum = { 10, 20, 30, 40, 50 };
+            int sum = 0;
+
+            foreach (int nums in arraySum)
+            {
+                sum += nums;
+            }
+
+            Console.WriteLine("Sum: " + sum);
+
+            int[] arrayAverage = { 10, 20, 30, 40, 50 };
+            int sumArray = 0;
+
+            foreach (int num in arrayAverage)
+            {
+                sumArray += num;
+            }
+
+            double average = (double)sumArray / arrayAverage.Length;
+
+            Console.WriteLine("Average: " + average);
         }
     }
+    
 }
