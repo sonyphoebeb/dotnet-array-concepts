@@ -23,11 +23,15 @@
             Console.WriteLine();
 
 
-
-
             // Demonstrating the use of StringArrays class
             StringArrays objStringArrays = new StringArrays();
             objStringArrays.DisplayTechnologies("HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Node");
+
+            Console.WriteLine();
+
+            // Displaying all the even numbers between start and end number 
+            EvenNumbers objEvenNumbers = new EvenNumbers();
+            objEvenNumbers.DisplayEvenNumbers();
         }
 
         
