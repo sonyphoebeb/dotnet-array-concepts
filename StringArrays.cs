@@ -4,13 +4,12 @@ namespace DotNetArrays
 {
     public class StringArrays
     {
-            public void DisplayNames()
+            public void DisplayTechnologies(params string[] technologies)
             { 
-                string[] names = { "sony", "nani", "rambabu", "jyothi" };
-
-                foreach (string name in names)
+                Console.WriteLine("Displaying string array using foreach loop");
+                foreach (string technology in technologies)
                 {
-                    Console.WriteLine(name);
+                    Console.WriteLine(technology);
                 }
             }
     }
